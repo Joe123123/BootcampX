@@ -1,0 +1,11 @@
+SELECT
+  t.name teacher,
+  s.name student,
+  a.name AS assignment,
+  ar.completed_at - ar.started_at duration
+FROM assistance_requests ar
+JOIN teachers t ON ar.teacher_id = t.id
+JOIN students s ON ar.student_id = s.id
+JOIN assignments a ON ar.assignment_id = a.id
+ORDER BY
+  duration
