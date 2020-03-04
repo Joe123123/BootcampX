@@ -4,7 +4,9 @@
       "askForPassword": true,
       "database": "bootcampx",
       "dialect": "PostgreSQL",
-      "name": "test",
+      "isActive": true,
+      "isConnected": true,
+      "name": "BootcampX",
       "port": 5432,
       "server": "localhost",
       "username": "zhaowang"
